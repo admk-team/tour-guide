@@ -13,6 +13,7 @@ class AuthController extends Controller
 {
     public function login(LoginRequest $request): SuccessResource|ErrorResource
     {
+        return $request
         try {
             if (auth($request->userType['type'])->attempt($request->safe()->all())) {
                 DB::beginTransaction();

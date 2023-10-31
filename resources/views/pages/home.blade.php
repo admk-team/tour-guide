@@ -8,6 +8,7 @@
         'images/training_programs_section.jpg' => 'ourservice',
         'images/agent_login_section.jpg'       => 'agent'
         ];
+        
 @endphp
 
 @extends('layouts.default')
@@ -150,90 +151,6 @@
         </div>
     </section>
 
-    {{-- Image Section --}}
-    {{--    <section--}}
-    {{--        class="container relative flex flex-wrap bg-white mx-auto lg:h-60 lg:items-center lg:px-32 lg:py-0 pt-8 gap-y-10 hidden">--}}
-    {{--        <div class="w-full px-4 sm:px-6 lg:w-1/2 lg:px-8">--}}
-    {{--            <div>--}}
-    {{--                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"--}}
-    {{--                     class="w-6 h-6 tex inline-block text-yellow-400">--}}
-    {{--                    <path fill-rule="evenodd"--}}
-    {{--                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"--}}
-    {{--                          clip-rule="evenodd"/>--}}
-    {{--                </svg>--}}
-    {{--                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"--}}
-    {{--                     class="w-6 h-6 tex inline-block text-yellow-400">--}}
-    {{--                    <path fill-rule="evenodd"--}}
-    {{--                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"--}}
-    {{--                          clip-rule="evenodd"/>--}}
-    {{--                </svg>--}}
-    {{--                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"--}}
-    {{--                     class="w-6 h-6 tex inline-block text-yellow-400">--}}
-    {{--                    <path fill-rule="evenodd"--}}
-    {{--                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"--}}
-    {{--                          clip-rule="evenodd"/>--}}
-    {{--                </svg>--}}
-    {{--                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"--}}
-    {{--                     class="w-6 h-6 tex inline-block text-yellow-400">--}}
-    {{--                    <path fill-rule="evenodd"--}}
-    {{--                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"--}}
-    {{--                          clip-rule="evenodd"/>--}}
-    {{--                </svg>--}}
-    {{--                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"--}}
-    {{--                     class="w-6 h-6 tex inline-block text-yellow-400">--}}
-    {{--                    <path fill-rule="evenodd"--}}
-    {{--                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"--}}
-    {{--                          clip-rule="evenodd"/>--}}
-    {{--                </svg>--}}
-    {{--            </div>--}}
-    {{--            <h1 class="text-4xl font-bold mt-4 text-gray-600">{{ $divider->contents()->latest()->first()->title ?? 'Cruise Around the World' }}</h1>--}}
-    {{--            <p class="mt-4">{{ $divider->contents()->latest()->first()->title ?? 'All inclusive packages for your next trip' }}</p>--}}
-    {{--        </div>--}}
-    {{--        <div class="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">--}}
-    {{--            <img--}}
-    {{--                src="{{ $divider->divider ?? asset('images/ship.jpg') }}"--}}
-    {{--                alt="{{ $divider->contents()->latest()->first()->title ?? 'Divider Image' }}"--}}
-    {{--                class="w-full h-full object-fit">--}}
-    {{--        </div>--}}
-    {{--    </section>--}}
-
-    {{-- Testimonials Section --}}
-   <!-- <section class="bg-gray-100 hidden" id="testimonials">
-        <div class="container mx-auto lg:px-32 lg:py-20 lg:w-[80%] py-12 text-center">
-            <h1 class="text-4xl font-bold text-center text-gray-600">{{ __('frontend.testimonials') }}</h1>
-            <hr class="w-20 mx-auto mt-4 mb-8 h-1 border-gray-400">
-            <section class="h-full">
-                <div class="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-                    <div class="swiper-container !overflow-hidden">
-                        <div class="swiper-wrapper">
-                            @foreach($testimonials as $testimonial)
-                                <div class="swiper-slide">
-                                    <blockquote class="bg-white p-8">
-                                        <div class="items-center gap-4">
-                                            <img alt="{{ $testimonial->name }}" src="{{ $testimonial->avatar }}"
-                                                 class="h-16 w-16 rounded-full object-cover mx-auto mb-4"/>
-                                            <div class="text-sm">
-                                                <p class="text-lg text-blue-400 font-semibold">{{ $testimonial->name }}</p>
-                                            </div>
-                                        </div>
-
-                                        <p class="relative mt-4 text-gray-500">
-                                            <span class="text-xl">&ldquo;</span>
-
-                                            {{ $testimonial->content }}
-
-                                            <span class="text-xl">&rdquo;</span>
-                                        </p>
-                                    </blockquote>
-                                </div>
-                            @endforeach
-                        </div>
-                        <div class="swiper-pagination !relative !bottom-0 mt-12"></div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>-->
 @endsection
 
 @push('styles')
