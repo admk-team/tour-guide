@@ -1,0 +1,22 @@
+
+.sponsors div:nth-child(n+2)::after {
+  position: relative;
+  color: rgb(107,114,128);
+  z-index: 1000000;
+  display: table;
+  text-transform: capitalize;
+  font-size: .8em;
+  padding: 10px 0 0;
+  width: 100%;
+  text-align: center;
+}
+.sponsors div:nth-child(2)::after {
+  content: "Hollywood Vacation";
+}
+.sponsors div:nth-child(3)::after {
+  content: "Tourist Guidance Organization";
+}
+.sponsor img {
+  margin: 0 auto;
+  display: table;
+}
